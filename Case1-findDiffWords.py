@@ -2,13 +2,15 @@
 # -*- coding: utf-8 -*-
 import re
 import os
+
+
 # 找出两篇英文文档中彼此不包含的单词，测试文件/PythonFirst/source
 # 输入：两篇文档的绝对路径，输出文档的绝对路径
 # 输出：包含查询结果的文档
 
 # 判断输入的文件路径是否存在
 def typeFilePath(path):
-    flag=os.path.isfile(path)
+    flag = os.path.isfile(path)
     while not flag:
         path = raw_input('please type correct path with file name:\n')
         flag = os.path.isfile(path)
@@ -17,20 +19,19 @@ def typeFilePath(path):
 pathA = typeFilePath(raw_input('please type the file path include file name A:\n'))
 pathB = typeFilePath(raw_input('please type the file path include file name B:\n'))
 
-
 pathOut = raw_input('please type the file out path include file name:\n')
-flag=os.path.isdir(pathOut)
+flag = os.path.isdir(pathOut)
 while flag:
     pathOut = raw_input('please type correct path with file name:\n')
     flag = os.path.isdir(pathOut)
 
-#拆分文件A
+# 拆分文件A
 with open(pathA, 'r') as f1:
     sA = f1.read()
 
 l1 = re.split(r'[],.;!:\s]', sA)
 
-#拆分文件B
+# 拆分文件B
 with open(pathB, 'r') as f2:
     sB = f2.read()
 l2 = re.split(r'[],.;!?:\s]', sB)
