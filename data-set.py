@@ -26,4 +26,4 @@ tu = (1, 2, 3)
 print (set(tu))
 tu2 = (1, [1, 2])
 print (tu2)
-# print (set(tu2)) #TypeError:unhashable type: 'list'
+# print (set(tu2)) #TypeError:unhashable type: 'list'，tu2包含list

@@ -18,6 +18,6 @@ else:
 print (d.get('Ton'))
 print (d.get('Ton', -1))
 
-#删除一个key
+# 删除一个key
 d.pop('Tom')
 print (d)

@@ -10,11 +10,11 @@ s1 = '123'
 print (s1, s2)
 
 # 连接字符串
-s = s1 + s2  #使用加号连接字符串，实际上是new一个str，当连接数较多时，浪费资源
+s = s1 + s2  # 使用加号连接字符串，实际上是new一个str，当连接数较多时，浪费资源
 print (s)
 
 l = ['hello', 'kitty', '!', 'bye']
-sCombine = ' '.join(l)  #使用join连接字符串节省空间
+sCombine = ' '.join(l)  # 使用join连接字符串节省空间
 print (sCombine)
 
 # 字符串长度

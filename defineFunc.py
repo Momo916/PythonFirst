@@ -10,5 +10,4 @@ def my_abs(x):
 print (my_abs(9))
 print (my_abs(-9))
 
-print (my_abs('A')) #如何处理的？？
-
+print (my_abs('A'))  # 如何处理的？？
