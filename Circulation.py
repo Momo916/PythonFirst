@@ -36,7 +36,7 @@ while n > 0:
 print(sum)
 
 # 利用循环一次打印出Hello, xxx!
-L = ['Bart', 'Lisa', 'Adam']
+L = ['Bart', 'Lisa', 'Adam','Aly']
 for name in L:
     print('Hello,', name, '!')
     print('Hello, {0}!'.format(name))
