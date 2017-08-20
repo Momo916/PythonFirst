@@ -4,6 +4,7 @@ l = ['apple', 'pear', 'banana']
 for fruit in l:
     print(fruit)
 
+#缩进的作用
 sum = 0
 for x in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
     sum = sum + x
@@ -14,7 +15,9 @@ for x in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
     sum = sum + x
     print(sum)
 
-for i in range(1, 10):
+#range生成一个整数序列
+print (range(5))  #从0开始小于5的整数序列
+for i in range(1, 10):  #从1开始小于10的整数
     print(i)
 
 sum = 0

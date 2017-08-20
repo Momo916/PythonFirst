@@ -14,8 +14,9 @@ s = s1 + s2  # 使用加号连接字符串，实际上是new一个str，当连�
 print (s)
 
 l = ['hello', 'kitty', '!', 'bye']
-sCombine = ' '.join(l)  # 使用join连接字符串节省空间
+sCombine = ' '.join(l)  # 使用join连接字符串更高效
 print (sCombine)
+print ('{} and {}'.format(s1,s2)) #format组合复杂的拼接
 
 # 字符串长度
 print (len(s))
